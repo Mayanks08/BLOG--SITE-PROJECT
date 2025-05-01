@@ -1,6 +1,6 @@
-# 📝 Blogify – A Full-Featured Blogging Platform
+# 📝 BolgSite – A Full-Featured Blogging Platform
 
-Blogify is a modern web application that allows users to create, read, and share rich blog content with images, styled text, and hyperlinks using the **TinyMCE** rich text editor. 
+**BolgSite** is a modern web application that allows users to create, read, and share rich blog content with images, styled text, and hyperlinks using the **TinyMCE** rich text editor. 
 Built with **Vite + React** for a lightning-fast front-end and powered by **Appwrite** and **Cloudinary**, it provides seamless content creation and delivery.
 
 ---
@@ -35,11 +35,17 @@ Built with **Vite + React** for a lightning-fast front-end and powered by **Appw
 ## 🧩 Folder Structure (Simplified)
 
 src/ ├── components/
-# UI components ├── pages/ # Route pages (Home, Blog, Login, etc.) 
+
+components ├── pages/ # Route pages (Home, Blog, Login, etc.) 
+
 ├── services/ # Appwrite & Cloudinary logic
+
 ├── middlewares/ # Token and auth guards 
+
 ├── hooks/ # Custom React hooks
+
 ├── utils/ # Utility functions (e.g., password encryption) 
+
 └── App.jsx # App root
 
 
@@ -64,6 +70,7 @@ Images added to blog posts are uploaded via API directly to **Cloudinary**. The 
    cd 12Megablog
    
    npm install
+   
 
   ##Set up .env file
    VITE_APPWRITE_ENDPOINT=https://[HOSTNAME]/v1
@@ -74,7 +81,9 @@ VITE_APPWRITE_COLLECTION_ID=your_collection_id
 VITE_CLOUDINARY_CLOUD_NAME=your_cloud_name
 VITE_CLOUDINARY_UPLOAD_PRESET=your_upload_preset
 
+```bash
 npm run dev
+```
 
 🔐 Auth & Middleware
 Uses access/refresh tokens stored in HTTP-only cookies
