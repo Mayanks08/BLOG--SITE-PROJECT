@@ -1,4 +1,4 @@
-import React , {useState} from 'react'
+import {useState} from 'react'
 import authService from '../Appwrite/Auth'
 import { Link,useNavigate } from 'react-router-dom'
 import { login } from '../store/authslice'
@@ -30,14 +30,14 @@ function Signup() {
        
 
   return (
-    <div className='flex items-center justify-center'>
+    <div className='min-h-screen flex items-center justify-center '>
         <div className={`mx-auto w-full max-w-lg bg-gray-100 rounded-xl p-10 border border-black/10`}>
             <div className='mb-2 flex justify-center'>
             <span className="inline-block w-full max-w-[100px]">
                         <Logo width="100%" />
                     </span>
             </div>
-            <h2 className=" text-center text-2xl font-extrabold text-gray-900 dark:text-white">Signup  to your account</h2>
+            <h2 className=" text-center text-2xl font-extrabold text-gray-900  dark:text-gray-900">Signup  to your account</h2>
             <p className="mt-2 text-center text-base text-black/60"> Already have an account?&nbsp;
             <Link 
             to="/login"
